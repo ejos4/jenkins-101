@@ -25,10 +25,12 @@ pipeline {
 			}
 		}
 		stage('Deliver....') {
-			echo 'Deliver....'
-			sh '''
-			echo "doing delivery stuff"
-			'''
+			steps {
+				echo 'Deliver....'
+				sh '''
+				echo "doing delivery stuff"
+				'''
+			}
 		}		
 	}
 }
